@@ -29,6 +29,24 @@ administrative region cascader base on view-design
     }
 </script>
 ```
+
+## 示例
+1.拉取git项目[ar-cascader](https://github.com/RickyHeaven/ar-cascader)
+```
+git clone https://github.com/RickyHeaven/ar-cascader.git
+```
+(也可以直接下载zip文件)
+
+2.安装依赖
+```npm i```
+
+3.运行项目
+```
+npm run serve
+```
+
+然后你就能在浏览器看到跑起来的示例了~
+
 ## config 配置
 属性  |  说明  |  类型  |  默认值
 :-------: | -------  |  :-------:  |  :-------:
@@ -41,7 +59,7 @@ placeholder|选择器未选择时显示的占位字符|String|'请选择']
 disabled|是否禁用选择器|Boolean|false
 render-format|选择后展示的函数，用于自定义显示格式|Function|``label => label.join(' / ')``
 change-on-select|当此项为 true 时，点选每级菜单选项值都会发生变化|Boolean|false
-
+## 事件
 事件  |  说明  |  返回值
 :-------: | -------  |  :-------:
 on-change|选择完成后的回调，返回值此时已选的数据数组|data
