@@ -1,0 +1,48 @@
+{
+  "name": "ar-cascader",
+  "version": "1.0.0",
+  "description": "administrative region cascader base on view-design",
+  "main": "/lib/ar-cascader.umd.min.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "lib": "vue-cli-service build --target lib --name ar-cascader --dest lib src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RickyHeaven/ar-cascader.git"
+  },
+  "keywords": [
+    "administrative",
+    "region",
+    "cascader",
+    "ar",
+    "ricky",
+    "zhangqingcq",
+    "vue",
+    "view-design",
+    "area-data",
+    "China"
+  ],
+  "author": "RickyHeaven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RickyHeaven/ar-cascader/issues"
+  },
+  "homepage": "https://github.com/RickyHeaven/ar-cascader#readme",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
