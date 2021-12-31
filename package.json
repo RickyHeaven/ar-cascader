@@ -1,6 +1,6 @@
 {
   "name": "ar-cascader",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "administrative region cascader base on view-design",
   "main": "/lib/ar-cascader.umd.min.js",
   "scripts": {
