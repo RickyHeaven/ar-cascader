@@ -21,7 +21,10 @@
     "vue",
     "view-design",
     "area-data",
-    "China"
+    "China",
+    "行政区域代码",
+    "中国省份",
+    "行政区域级联"
   ],
   "author": "RickyHeaven",
   "license": "ISC",
