@@ -14,12 +14,12 @@
 </template>
 
 <script>
-  import areaData from 'area-data'
+  import { pca, pcaa } from 'area-data'
   import util from './util'
 
   const levelShow = (level, code) => {
     if (level === 2) {
-      return Object.keys(areaData['86']).indexOf(code) > -1
+      return Object.keys(pca['86']).indexOf(code) > -1
     }
     else if (level === 3) {
       return true
@@ -74,13 +74,13 @@
     methods: {
       init() {
         let proData = []
-        for (const p in areaData['86']) {
+        for (const p in pca['86']) {
           let proitem = {
             value: p,
-            label: areaData['86'][p],
+            label: pca['86'][p],
             children: []
           }
-          if (this.showLevel > 0 && areaData[p]) {
+          if (this.showLevel > 0 && pcaa[p]) {
             proitem.loading = false
           }
           proData.push(proitem)
@@ -95,10 +95,10 @@
             let index = ''
             while (this.value[i] && i <= this.showLevel) {
               if (i === 0) {
-                index = util.getIndex(areaData['86'], this.value[0])
+                index = util.getIndex(pca['86'], this.value[0])
               }
               else {
-                index = util.getIndex(areaData[index], this.value[i])
+                index = util.getIndex(pcaa[index], this.value[i])
               }
               select.push(index)
               i++
@@ -142,15 +142,15 @@
       },
       loadData(item, callback) {
         let childData = []
-        let childs = areaData[item.value]
+        let childs = pcaa[item.value]
         for (const c in childs) {
           if(childs.hasOwnProperty(c)){
             let childitem = {
               value: c,
-              label: areaData[item.value][c],
+              label: pcaa[item.value][c],
               children: []
             }
-            if (areaData[childitem.value] && levelShow(this.showLevel, item.value)) {
+            if (pcaa[childitem.value] && levelShow(this.showLevel, item.value)) {
               childitem.loading = false
             }
             childData.push(childitem)
@@ -166,10 +166,10 @@
         while (arr[i]) {
           let name = ''
           if (i === 0) {
-            name = areaData['86'][arr[i]]
+            name = pca['86'][arr[i]]
           }
           else {
-            name = areaData[arr[i - 1]][arr[i]]
+            name = pcaa[arr[i - 1]][arr[i]]
           }
           let item
           if (this.dataType === 'all') {
