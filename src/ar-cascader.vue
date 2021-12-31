@@ -21,9 +21,6 @@
     if (level === 2) {
       return Object.keys(pca['86']).indexOf(code) > -1
     }
-    else if (level === 3) {
-      return true
-    }
   }
   export default {
     name: "ar-cascader",
@@ -34,7 +31,7 @@
           Number,
           String
         ],
-        default: 3,
+        default: 2,
         validator: val => {
           return util.checkLevel(parseInt(val))
         }

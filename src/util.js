@@ -1,6 +1,6 @@
 let util = {}
 
-util.levelArr = [0, 1, 2, 3]
+util.levelArr = [0, 1, 2]
 
 util.oneOf = (item, arr) => {
   return arr.some(i => {

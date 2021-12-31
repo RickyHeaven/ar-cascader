@@ -52,7 +52,7 @@ npm run serve
 :-------: | -------  |  :-------:  |  :-------:
 value|用于存放结果的数组，建议使用v-model来做双向绑定|无|无
 v-model|用于存放结果的数组，选择了数据后会自动更新|无|无
-level|要显示的级别，如设为2则显示省、市和县，即3级，级别可设为0、1、2、3四级|String &#124; Number|3
+level|要显示的级别，如设为2则显示省、市和县，即3级，级别可设为0、1、2三级（area-data到2.0版本以后不再包含街道数据）|String &#124; Number|2
 data-type|返回数据的类型，'all':城市编码和名称，'code':只返回编码，'name':只返回名称，数据格式同al-selector补充说明|String|all
 size|选择器尺寸，该属性同iview组件cascader的size属性，可选值为small，large|String|无
 placeholder|选择器未选择时显示的占位字符|String|'请选择']
