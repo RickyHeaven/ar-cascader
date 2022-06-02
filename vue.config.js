@@ -29,6 +29,12 @@ module.exports = {
             commonjs: 'view-design',
             commonjs2: 'view-design',
             amd: 'view-design'
+          },
+          'area-data': {
+            root: 'area-data',
+            commonjs: 'area-data',
+            commonjs2: 'area-data',
+            amd: 'area-data'
           }
         },
         plugins: [
