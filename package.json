@@ -2,7 +2,23 @@
   "name": "ar-cascader",
   "version": "1.0.6",
   "description": "administrative region cascader base on view-design",
+  "files": [
+    "lib",
+    "src",
+    "types"
+  ],
   "main": "/lib/ar-cascader.umd.min.js",
+  "module": "./lib/ar-cascader.umd.min.js",
+  "typings": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/ar-cascader.umd.min.js",
+      "require": "./lib/ar-cascader.common.js",
+      "types": "./types/index.d.ts"
+    },
+    "./lib/**/*.js": "./lib/**/*.js",
+    "./*": "./*"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "lib": "vue-cli-service build --target lib --name ar-cascader --dest lib src/index.js"
@@ -34,19 +50,23 @@
   "homepage": "https://github.com/RickyHeaven/ar-cascader#readme",
   "dependencies": {
     "area-data": "^5.0.6",
-    "core-js": "^3.6.5",
-    "view-design": "^4.3.2",
-    "vue": "^2.6.11"
+    "core-js": "^3.8.3",
+    "view-design": "^4.7.0",
+    "vue": "^2.6.14"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "vue-template-compiler": "^2.6.11",
-    "compression-webpack-plugin": "^4.0.0"
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "vue-template-compiler": "^2.6.14",
+    "compression-webpack-plugin": "^10.0.0"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.14.4"
+  }
 }
