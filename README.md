@@ -1,49 +1,97 @@
 # ar-cascader
-基于view-design的行政区域级联组件(基于iviewArea中alCascader改良)
+基于view-design的行政区域级联组件
 
 administrative region cascader base on view-design
 
-## install 安装
-```
-    npm install ar-cascader --save
-```
-## use 使用
+## vue2
+### install 安装
+  ```
+    npm install ar-cascader
+    
+    or
+    
+    pnpm add ar-cascader
+  ```
+### use 使用
 在main.js中写入下面的代码
-```javascript
-    import arCascader from 'ar-cascader';
-    import Vue from 'vue';
-    Vue.use(arCascader);
-```
+  ```javascript
+      import arCascader from 'ar-cascader'
+      import Vue from 'vue'
+      Vue.use(arCascader)
+  ```
 接下来，你就可以在页面中使用ar-cascader了
-```vue
-<template>
-    <ar-cascader v-model="value"/>
-</template>
-<script>
-    export default {
-        data () {
-            return {
-                value: []
+  ```vue
+    <template>
+        <ar-cascader v-model="value"/>
+    </template>
+    <script>
+        export default {
+            data () {
+                return {
+                    value: []
+                }
             }
         }
-    }
-</script>
-```
+    </script>
+  ```
 
-## 示例
+### 示例
 1.拉取git项目[ar-cascader](https://github.com/RickyHeaven/ar-cascader)
-```
-git clone https://github.com/RickyHeaven/ar-cascader.git
-```
+  ```
+    git clone https://github.com/RickyHeaven/ar-cascader.git
+  ```
 (也可以直接下载zip文件)
 
 2.安装依赖
-```npm i```
+  ```
+    pnpm i
+  ```
 
 3.运行项目
-```
-npm run serve
-```
+  ```
+    pnpm serve
+  ```
+
+然后你就能在浏览器看到跑起来的示例了~
+
+## vue3
+
+### install 安装
+  ```
+    npm install ar-cascader
+    
+    or
+    
+    pnpm add ar-cascader
+  ```
+### use 使用
+
+  ```
+    //vue SFC
+    
+    import {ref} from 'vue'
+    import ArCascader from 'ar-cascader';
+    const value = ref([])
+  
+    <ArCascader v-model="value"/>
+  ```
+
+### 示例
+1.拉取git项目[ar-cascader](https://github.com/RickyHeaven/ar-cascader-core)
+  ```
+    git clone https://github.com/RickyHeaven/ar-cascader-core.git
+  ```
+(也可以直接下载zip文件)
+
+2.安装依赖
+  ```
+    pnpm i
+  ```
+
+3.运行项目
+  ```
+    pnpm dev
+  ```
 
 然后你就能在浏览器看到跑起来的示例了~
 

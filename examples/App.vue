@@ -18,7 +18,7 @@
     name: 'App',
     data() {
       return {
-        value: [],
+        value: ['130000', '130300', '130306'],
         changeOnSelect: false
       }
     }
