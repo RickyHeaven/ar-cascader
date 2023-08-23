@@ -58,11 +58,11 @@ administrative region cascader base on view-design
 
 ### install 安装
   ```
-    npm install ar-cascader
+    npm install ar-cascader@vue3
     
     or
     
-    pnpm add ar-cascader
+    pnpm add ar-cascader@vue3
   ```
 ### use 使用
 
