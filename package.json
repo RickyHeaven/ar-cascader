@@ -1,7 +1,7 @@
 {
   "name": "ar-cascader",
   "version": "1.0.10",
-  "description": "administrative region cascader base on view-design",
+  "description": "regionalism cascader base on view-design，中国行政区域区域划分(含港澳台)级联选择器，三级，省-市-区，数据来源于国家统计局2023年6月统计用区划代码",
   "files": [
     "lib",
     "src",
@@ -49,16 +49,17 @@
   },
   "homepage": "https://github.com/RickyHeaven/ar-cascader#readme",
   "dependencies": {
-    "area-data": "^5.0.6",
+    "@zhangqingcq/china-area-data": "^0.0.3",
     "core-js": "^3.8.3",
+    "lodash-es": "^4.17.21",
     "view-design": "^4.7.0",
     "vue": "^2.6.14"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "vue-template-compiler": "^2.6.14",
-    "compression-webpack-plugin": "^10.0.0"
+    "compression-webpack-plugin": "^10.0.0",
+    "vue-template-compiler": "^2.6.14"
   },
   "browserslist": [
     "> 1%",

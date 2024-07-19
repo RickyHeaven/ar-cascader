@@ -17,26 +17,7 @@ module.exports = {
         output: {
           libraryExport: 'default'
         },
-        externals: {
-          vue: {
-            root: 'Vue',
-            commonjs: 'vue',
-            commonjs2: 'vue',
-            amd: 'vue'
-          },
-          'view-design': {
-            root: 'ViewUI',
-            commonjs: 'view-design',
-            commonjs2: 'view-design',
-            amd: 'view-design'
-          },
-          'area-data': {
-            root: 'area-data',
-            commonjs: 'area-data',
-            commonjs2: 'area-data',
-            amd: 'area-data'
-          }
-        },
+        externals: ['vue','view-design','@zhangqingcq/china-area-data','lodash-es'],
         plugins: [
           new compressionPlugin({
             test: /\.js$|\.html$|\.css/, //匹配文件名
