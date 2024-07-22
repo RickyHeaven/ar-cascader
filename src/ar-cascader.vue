@@ -84,6 +84,7 @@
           return t
         },
         set(v) {
+          v = v.map(e => (typeof e === 'string' ? Number(e) : e))
           if (this.isSame(v)) {
             return
           }
