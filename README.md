@@ -49,6 +49,7 @@ regionalism cascader base on view-design
   ```
     pnpm i
   ```
+  > 如果安装依赖失败，可能时npm镜像和库不一致，可根据提示安装对应的镜像（淘宝镜像https://registry.npmmirror.com、腾讯云镜像https://mirrors.cloud.tencent.com/npm/）后安装项目依赖
 
 3.运行项目
   ```
