@@ -49,7 +49,7 @@ regionalism cascader base on view-design
   ```
     pnpm i
   ```
-  > 如果安装依赖失败，可更换国内的镜像再试（淘宝镜像https://registry.npmmirror.com、腾讯云镜像https://mirrors.cloud.tencent.com/npm/）
+  > 如果安装依赖失败，可更换国内的镜像再试，淘宝镜像https://registry.npmmirror.com，腾讯云镜像https://mirrors.cloud.tencent.com/npm/
 
 3.运行项目
   ```
