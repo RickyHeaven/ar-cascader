@@ -1,6 +1,6 @@
 {
   "name": "ar-cascader",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "regionalism cascader base on view-design，中国行政区域区域划分(含港澳台)级联选择器，三级，省-市-区，数据来源于国家统计局2023年6月统计用区划代码",
   "files": [
     "lib",
